@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="18.02dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="29.98dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/clos" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="246dp"
+            android:layout_height="35dp"
+            android:layout_gravity="left"
+            android:fontFamily="sans-serif-medium"
+            android:text="Login to Your Account"
+            android:textColor="#282D40"
+            android:textSize="24dp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editTextsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:autofillHints="name"
+            android:background="@drawable/rounded_edittext_background"
+            android:drawableStart="@drawable/jordan"
+            android:drawablePadding="18dp"
+            android:hint="+962790000000"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:paddingStart="22dp"
+            android:textColor="#B5B5B5"
+
+            />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:autofillHints="password"
+            android:background="@drawable/rounded_edittext_background"
+            android:drawableStart="@drawable/layer"
+            android:drawablePadding="18dp"
+            android:hint="Password"
+            android:inputType="textVisiblePassword"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:paddingStart="22dp"
+            android:textColor="#B5B5B5"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:padding="16dp"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextsLayout">
+
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:text="Forgot Password?"
+
+            android:textColor="#65AFCD"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/createAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/termsAndConditionsTextView"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="right"
+            android:text="Create account"
+            android:textColor="#65AFCD"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Creat"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/botton_shape"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Enter"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Creat">
+
+        <View
+            android:layout_width="208dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="39dp"
+            android:background="#282D40" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Or Sign up with"
+            android:textColor="#282D40"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="170dp"
+            android:background="@drawable/facebokk" />
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/gmaill" />
+
+        <ImageView
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/applee" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="148dp"
+        android:layout_height="21dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="161dp"
+        android:layout_marginBottom="18dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Explore as a Gust "
+        android:textColor="#8D080D"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

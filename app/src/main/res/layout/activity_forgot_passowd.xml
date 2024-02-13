@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotPassowdActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="18.02dp"
+            android:layout_height="18dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="29.98dp"
+            android:layout_marginEnd="15dp"
+            android:src="@drawable/arrowback" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="190dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:fontFamily="sans-serif-medium"
+            android:text="Forgot Password"
+            android:textColor="#282D40"
+            android:textSize="24dp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Provide registered phone number"
+        android:textColor="#282D40"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout" />
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:autofillHints="name"
+            android:background="@drawable/rounded_edittext_background"
+            android:drawableStart="@drawable/jordan"
+            android:drawablePadding="18dp"
+            android:hint="+962790000000"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minHeight="48dp"
+            android:paddingStart="22dp"
+            android:textColor="#B5B5B5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3"
+
+            />
+
+
+
+
+
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:background="@drawable/botton_shape"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:text="Submit"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
