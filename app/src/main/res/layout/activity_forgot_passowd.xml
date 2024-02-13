@@ -31,11 +31,11 @@
             android:id="@+id/title"
             android:layout_width="190dp"
             android:layout_height="30dp"
-            android:layout_gravity="left"
+            android:layout_gravity="start"
             android:fontFamily="sans-serif-medium"
             android:text="Forgot Password"
             android:textColor="#282D40"
-            android:textSize="24dp"
+            android:textSize="24sp"
             android:textStyle="normal" />
 
     </LinearLayout>
@@ -98,7 +98,7 @@
         android:fontFamily="sans-serif-medium"
         android:gravity="center"
         android:text="Submit"
-        android:textSize="17dp"
+        android:textSize="17sp"
         android:textStyle="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"

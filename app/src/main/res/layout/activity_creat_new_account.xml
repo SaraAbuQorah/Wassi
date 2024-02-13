@@ -31,11 +31,11 @@
             android:id="@+id/title"
             android:layout_width="229dp"
             android:layout_height="28sp"
-            android:layout_gravity="left"
+            android:layout_gravity="start"
             android:fontFamily="sans-serif-medium"
             android:text="Create New Account"
             android:textColor="#282D40"
-            android:textSize="24dp"
+            android:textSize="24sp"
             android:textStyle="normal" />
 
     </LinearLayout>
@@ -146,7 +146,6 @@
                 android:id="@+id/agreementCheckBox"
                 android:layout_width="15dp"
                 android:layout_height="15dp"
-                android:layout_below="@id/termsAndConditionsTextView"
                 android:background="#E5E5E5" />
 
             <TextView
@@ -167,7 +166,7 @@
                 android:text="Terms &amp; Conditions"
                 android:textColor="#8D080D"
                 android:layout_marginBottom="20dp"
-                android:layout_toEndOf="@id/termsAndConditionsTextView" />
+              />
 
             <TextView
                 android:id="@+id/andPrivacyPolicyTextView"
@@ -177,7 +176,7 @@
                 android:layout_marginBottom="20dp"
                 android:textSize="11sp"
                 android:textColor="@color/black"
-                android:layout_toEndOf="@id/termsLinkTextView" />
+               />
 
             <TextView
                 android:id="@+id/privacyPolicyLinkTextView"
@@ -187,7 +186,7 @@
                 android:textSize="11sp"
                 android:layout_marginBottom="20dp"
                 android:textColor="#8D080D"
-                android:layout_toEndOf="@id/andPrivacyPolicyTextView" />
+                 />
 
 
         </LinearLayout>
@@ -203,7 +202,7 @@
             android:fontFamily="sans-serif-medium"
             android:gravity="center"
             android:text="Creat"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:textStyle="normal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -218,7 +217,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="25dp"
         android:fontFamily="sans-serif-medium"
-        android:gravity="right"
+        android:gravity="end"
         android:text="Login to account"
         android:textColor="#65AFCD"
         android:textSize="16sp"
@@ -269,20 +268,20 @@
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginStart="170dp"
-            android:background="@drawable/facebokk" />
+            android:layout_marginStart="150dp"
+            android:background="@drawable/f" />
 
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginStart="15dp"
-            android:src="@drawable/gmaill" />
+            android:layout_marginStart="10dp"
+            android:src="@drawable/g" />
 
         <ImageView
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginStart="15dp"
-            android:src="@drawable/applee" />
+            android:layout_marginStart="10dp"
+            android:src="@drawable/a" />
     </LinearLayout>
 
         <TextView
@@ -296,7 +295,7 @@
             android:layout_gravity="center"
             android:text="Explore as a Gust "
             android:textColor="#8D080D"
-            android:textSize="17dp"
+            android:textSize="17sp"
             android:textStyle="normal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

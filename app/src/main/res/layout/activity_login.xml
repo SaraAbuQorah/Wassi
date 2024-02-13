@@ -187,22 +187,22 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <ImageView
-            android:layout_width="49dp"
-            android:layout_height="49dp"
-            android:layout_marginStart="170dp"
-            android:background="@drawable/facebokk" />
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="150dp"
+            android:background="@drawable/f" />
 
         <ImageView
-            android:layout_width="49dp"
-            android:layout_height="49dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginStart="10dp"
-            android:src="@drawable/gmaill" />
+            android:src="@drawable/g" />
 
         <ImageView
-            android:layout_width="49dp"
-            android:layout_height="49dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_marginStart="10dp"
-            android:src="@drawable/applee" />
+            android:src="@drawable/a" />
     </LinearLayout>
 
     <TextView
